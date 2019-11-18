@@ -13,4 +13,5 @@ def turtle_traits(turtles)
   turtles.map do |turtle|
     traits << turtle[:traits]
   end
+  traits
 end
