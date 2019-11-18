@@ -12,7 +12,8 @@ def crew
 end
 
 def greet_crew (crew)
-  crew.each {|crew_member| "Hello #{crew_member}."}
+  greet
+  crew.each {|crew_member| greet << "Hello #{crew_member}."}
 end
 
 def engage
@@ -20,5 +21,6 @@ def engage
   state_log(date)
   crew = crew()
   greet = greet_crew(crew)
+  binding.pry
   greet
 end
