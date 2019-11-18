@@ -22,6 +22,5 @@ def engage
   state_log(date)
   crew = crew()
   greet = greet_crew(crew)
-  binding.pry
   greet
 end
